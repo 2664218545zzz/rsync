@@ -1,0 +1,22 @@
+---
+- name: install rsync_user
+  hosts: c85
+  tasks:
+    - import_tasks: ../modules/rsync/rsync_user.yml
+
+
+
+- name: install  rsync_server
+  hosts: c86
+  tasks:
+    - import_tasks: ../modules/rsync/rsync_server.yml
+    - name: create file /scripts
+      file:
+        path: /scripts/
+        state: directory
+    - name: copy inotify.sh
+      copy:
+        src: ../modules/rsync/inotify.sh
+        dest: /scripts/inotify.sh
+        mode: 0755
+

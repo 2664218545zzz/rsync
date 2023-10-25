@@ -1,0 +1,22 @@
+depends:
+  - openssl-devel
+  - pcre-devel 
+  - expat-devel
+  - libtool
+  - gcc
+  - gcc-c++
+  - make 
+  - ncurses-devel
+  - cmake
+  - mariadb-devel
+  - libxml2-devel
+  - sqlite-devel
+  - bzip2
+  - bzip2-devel
+  - libcurl-devel
+  - readline-devel
+  - libpng-devel
+  - libjpeg-turbo-devel
+  - freetype-devel
+  - libzip-devel
+  - ncurses-compat-libs

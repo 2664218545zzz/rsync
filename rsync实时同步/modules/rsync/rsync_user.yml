@@ -1,0 +1,12 @@
+---
+- name: Execute scripts
+  script: rsync_user.sh
+ 
+- name: enable rsyncd
+  systemd:
+    name: rsyncd
+    state: started
+    enabled: yes
+
+
+
